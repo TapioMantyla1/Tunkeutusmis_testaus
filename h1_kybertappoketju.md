@@ -1,5 +1,5 @@
 x) Podcastin kuuntelu:
-- Kuuntelin podcastin: Herrasmieshakkerit, jakso "Demokratian suojelija, vieraana Ahti Kurvinen | 0x1f"
+- Kuuntelin podcastin: Herrasmieshakkerit, jakso "Demokratian suojelija, vieraana Ahti Kurvinen | 0x1f" 6.7.2022
 - Podcast jaksossa vetäjät puhuvat siitä kuinka lunnastroijalaiset virukset ovat muuttuneet aggressiivisemmaksi sekä vaarallisemmaksi. Hyökkääjät tekevät tietomurtoja joiden avulla kiristävät tiedonomistajia rahaa vastaan.
 - Podcastin viereena oleva Ahti Kurvinen on valtioneuvoston turvallisuusjohtaja sekä valtioneuvoston valmiusyksikön johtaja.
 - Kurvinen luettelee kuinka he takaavat ministereiden turvallisuuden. Tietoturvallisuuden he takaavat esimerkiksi kouluttamalla ministereitä oikeanlaiseen tietojen käsittelyyn.
@@ -7,20 +7,20 @@ x) Podcastin kuuntelu:
 - Toinen haastava hetki oli kun yhdysvallat vetäytyi Afganistanista jolloin he juotuivat evakuoimaan maasta suomalaiset diplomaatit sekä suomenkansalaisia.
 - Kysymys: Olisi mielenkiintoista tietää mitä valmiusyksikössä konkreettisesti tekevät aktiivisen kyberhyökkäyksen aikana.
 
-Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains:
+Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains 2011: 
 - Artikkelissa kerrotaan että puolustuksen pitäisi perustua tiedusteluun ja ymmärtää kuka hyökkää, miten hyökkää ja mitä vastaan.
 - Cyber kill chain jakautuu seitsemään eri vaiheeseen: tiedustelu > aseistaminen > toimitus > hyväksikäyttö > asennus > komenna ja kontrolloi > tavoitteiden varmistaminen
 - Puolustajalla on etu ketjumallissa: Hyökkääjän on onnistuttava ketjun jokaisessa vaiheessa päästäkseen tavoitteeseen, kun taas puolustajan on havaittava ja tuhottava hyökkäys vain kerran.
 - Jokaisesta tulevasta hyökkäyksestä/hyökkäysyrityksestä saadaan lisää tietoa sekä indikaattoreita tulevia hyökkäyksiä varten.
 
-Surveying Essential Tools for Active Reconnaissance (video):
+Surveying Essential Tools for Active Reconnaissance (video) 4.2019:
 - Aktiivisessa tiedustelussa lähetetään paketteja kohde tietoverkkoon: porttiskannaus, verkkopalvelun arviointi sekä havoittuvuuden skannaus (asioista jotka saattavat herättää hälytyksiä)
 - Ohjelmia: aikaisempiin tehtäviin suosituin ohjelma on nmap, jos portteja on paljon skannattavana niin nopein ohjelma on Masscan
 - Esimerkki komento porttiskannaukseen: nmap -sS -vv -T4 -A
 - jos verkkopalveluja on paljon niin niiden arviointiin hyvä ohjelma on EyeWitness koska se skannaa verkkopalvelut ja priorisoi ne puolestasi
 - Huomio: olisi hyvä tietää miten näitä vastaan voi puolustatua
 
-KKO 2003:36
+KKO 2003:36 8.4.2003:
 - Artikkelissa kerrotaan kuinka 17-vuotias porttiskannasi pankin tietojärjestelmiä luvatta
 - Palomuuri oli estänyt yrityksen joten teko jäi tietomurron yritykseksi
 - Syytetty määrättiin maksamaan vahingonkorvauksia 110 000 markkaa.
