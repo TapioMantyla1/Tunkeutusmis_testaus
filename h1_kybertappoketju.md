@@ -1,5 +1,5 @@
 x) Podcastin kuuntelu:
-- Kuuntelin podcastin: Herrasmieshakkerit, jakso "Demokratian suojelija, vieraana Ahti Kurvinen | 0x1f" 6.7.2022
+Herrasmieshakkerit "Demokratian suojelija, vieraana Ahti Kurvinen | 0x1f" 6.7.2022
 - Podcast jaksossa vetäjät puhuvat siitä kuinka lunnastroijalaiset virukset ovat muuttuneet aggressiivisemmaksi sekä vaarallisemmaksi. Hyökkääjät tekevät tietomurtoja joiden avulla kiristävät tiedonomistajia rahaa vastaan.
 - Podcastin viereena oleva Ahti Kurvinen on valtioneuvoston turvallisuusjohtaja sekä valtioneuvoston valmiusyksikön johtaja.
 - Kurvinen luettelee kuinka he takaavat ministereiden turvallisuuden. Tietoturvallisuuden he takaavat esimerkiksi kouluttamalla ministereitä oikeanlaiseen tietojen käsittelyyn.
