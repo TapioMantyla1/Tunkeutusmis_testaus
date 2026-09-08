@@ -14,8 +14,9 @@
 - Löydetään oikeat komennot nmapille ja skannataan portit -> kun on löydetty ohjelmistoversiot sekä portit valitaan ja sovitellaan oikea tapa hyödyntää sitä -> syötetään payload
 
 Lähteet: 
-What is fuzzing and fuzz testing? (29.7.2024): https://github.com/resources/articles/what-is-fuzz-testing luettu 8.9.2026
-Conducting a penetration test with Metasploit:sta luvun loppuun: https://learning.oreilly.com/library/view/mastering-metasploit/9781838980078/B15076_01_Final_ASB_ePub.xhtml#_idParaDest-30 luettu 8.9.2026
+What is fuzzing and fuzz testing? (29.7.2024): https://github.com/resources/articles/what-is-fuzz-testing (luettu 8.9.2026)
+
+Conducting a penetration test with Metasploit:sta luvun loppuun: https://learning.oreilly.com/library/view/mastering-metasploit/9781838980078/B15076_01_Final_ASB_ePub.xhtml#_idParaDest-30 (luettu 8.9.2026)
 
 **Mitä 'nmap -sn' tekee?**
 
