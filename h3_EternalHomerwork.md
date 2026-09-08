@@ -35,7 +35,7 @@ sitten ajoin porttiskannauksen 'db_nmap -sV 192.168.56.101':
 
 <img width="936" height="583" alt="image" src="https://github.com/user-attachments/assets/a5210122-f765-43f9-bf50-62cc93b6ed8e" />
 
-**b)**
+**b) Tarkastele Metasploitin tietokantoihin tallennettuja tietoja**
 
 Tulokset tallennetuista skannauksista:
 
@@ -45,7 +45,7 @@ sitten koitin hakea ssh porttia tietokannois:
 
 <img width="772" height="41" alt="image" src="https://github.com/user-attachments/assets/29ef621d-6318-42d0-898c-e40fc68ab4bc" />
 
-**c)**
+**c) Internet famous**
 
 Netistä löysin kuuluisan haavoittuvuuden "vsftpd" missä saa käyttäjän root oikeudet kun käyttäjänimeen lisää ":)" -hymiön
 
@@ -53,7 +53,7 @@ Netistä löysin kuuluisan haavoittuvuuden "vsftpd" missä saa käyttäjän root
 
 Lähde: Metasploitable 2 Exploitability Guide: https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide/ (Luettu 8.9.2026)
 
-**D)**
+**D) Vertaile nmap:n omaa tiedostoon tallennusta**
 
 nmapilla pystyy tallentamaan tuloksia ilman tietokantaa sen omalla tallennus komennolla 'nmap -oA "kansionnimi" ip'. Komento skannaaportit sekä tallentaa niiden tiedot kolmeen eri tiedostomuotoon: normaaliin teksti tiedostoon "-oN", XML tiedostomuotoon "-oX" sekä grepattavaan muotoon "-oG".
 
@@ -121,7 +121,7 @@ Lähde: Metaploitable II: Exploiting Samba smbd 3.X — 4.X https://medium.com/@
 - komento 'ps' näyttää kaikki käynnissä olevat prosessit
 - komento 'download "kohde" "lähde"' lataa kohde koneesta haluttuja tiedostoja halutulle koneelle
 
-Lähde: Meterpreter Basics https://www.offsec.com/metasploit-unleashed/meterpreter-basics/ Luettu 8.9.2026
+Lähde: Meterpreter Basics https://www.offsec.com/metasploit-unleashed/meterpreter-basics/ (Luettu 8.9.2026)
 
 **i) Shell-session tallennus**
 
@@ -131,8 +131,27 @@ Aloitin Shell-session tallennuksen kirjoittamalla kalin bashiin 'script -fa log0
 
 - <img width="890" height="263" alt="image" src="https://github.com/user-attachments/assets/5179b1e6-10af-40b8-8fbf-200efb5db95b" />
 
-Lähde: 
+**j) Pivot point**
 
-**Lähteet:**
-What is fuzzing and fuzz testing? (29.7.2024): https://github.com/resources/articles/what-is-fuzz-testing luettu 8.9.2026
-Host discovery (: https://nmap.org/book/man-host-discovery.html 
+Kopioin kaikki nmap tiedostot sekä script-tekstitiedoston uuteen kansioon ja nimesin sen 'pentest':
+
+- <img width="566" height="155" alt="image" src="https://github.com/user-attachments/assets/da95d271-6f38-42ce-841f-19fc493eb437" />
+
+Mitä eri MAC-osoitteita koneilla on?
+
+- <img width="727" height="59" alt="image" src="https://github.com/user-attachments/assets/604a547d-b2f8-443d-be4e-211e92e96694" />
+
+
+'-r' = rekursiivinen haku, hakee kaikista tiedostoista
+'-i' = case-insensitive eli ei välitä kirjain koosta (isot/pienet kirjaimet)
+
+Lähde: grep(1) — Linux manual page https://man7.org/linux/man-pages/man1/grep.1.html (Luettu 8.9.2026)
+
+**K) Attaaack!**
+
+Käytetyt tekniikat ja taktiikat:
+- tiedustelu: Tiedustelin kohdetta 'nmap' työkalulla millä kartoitettiin haavoittuvuuksia.
+- resurssien hankinta: hyökkäykseen tarvittavien työkalujen valinta (payloadit)
+- Ensimmäinen jalansija: Vsftpd:n takaportin hyödyntäminen sekä samban haavoittuvuuden hyödyntäminen
+- Tiedustelu kohteesa: komennolla 'ls' saatiin tietää root oikeudet sekä 'sysinfo' saatiin tietää koneen versio
+- Haitallisen koodin ajaminen kohteessa: Komennolla 'download' saadaan ladattua kohdekoneesta haluttuja tiedostoja omalle koneelle tai 'cat /etc/passwd' voidaan katsoa salasanoja
