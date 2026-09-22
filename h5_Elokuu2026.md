@@ -5,7 +5,7 @@
 - Työkalussa hashid parametri -m näyttää numeron, jota käytetään varsinaisessa murtamisessa
 - komennolla 'hashid -m (hash)' saadaan numero jota käytetään salasanan murtamisessa
 - komennolla 'hashcat -m (hashid komennosta saatu numero) ('hash') -o (tiedosto johon haluat vastauksen tallentuvan)
-Lähden: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/ (Luettu 22.9.2026)
+Lähde: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/ (Luettu 21.9.2026)
 
 **Karvinen 2023: Crack File Password With John**
 - John the ripper on ohjelma mikä murtaa tiedostosalasanat sanakirjahyökkäyksellä
@@ -13,10 +13,11 @@ Lähden: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/ (Luettu 
 - Tiedostosta erotetaan hash komennolla '/zip2john jotain.zip > jotain.zip.hash'
 - Sanakirjahyökkäys tehdään komennolla '/john jotain.zip.hash'
 - Ohjleman mukana tulee kasa työkaluja, joiden avulla pystytään murtamaan salasanoja eri muodoista, esimerkiksi PDF, Office sekä SSH-avaimet
+Lähde: https://terokarvinen.com/2023/crack-file-password-with-john/ (Luettu 21.9.2026)
 
 **a) Asenna Hashcat ja testaa sen toiminta murtamalla esimerkkisalasana.**
 - 
-- Hashcatin asennut olis vaivatonta:
+- Hashcatin asennut oli vaivatonta:
 <img width="622" height="348" alt="image" src="https://github.com/user-attachments/assets/ed771b28-4cac-41ae-9a86-0c844371e066" />
 
 - loin uuden tiedoston johon toin nettiin ladattujen, jo murrettujen salasanojen listan
@@ -82,5 +83,19 @@ lähde: https://www.tutorialspoint.com/article/install-and-use-7zip-on-linux (Lu
 Lähde: https://www.kali.org/tools/cewl/ (Luettu 22.9.2026)
 
 **h) Hash rules**
--
 - 
+- Loin tiivisteen salasanalle ja loin minimaalisen sanakirjan, jossa on cain perussana:
+<img width="445" height="95" alt="image" src="https://github.com/user-attachments/assets/505c962f-bb29-4af5-bab7-4f3a006ac9d5" />
+
+- Sitten loin oman sääntötiedoston ja ajoin hashcat omalla säännöllä:
+<img width="282" height="47" alt="image" src="https://github.com/user-attachments/assets/3cdcf1d2-4eec-4832-bdf2-771d5b6b231f" />
+<img width="633" height="434" alt="image" src="https://github.com/user-attachments/assets/87bd35bb-34dc-4e86-ae85-a2e32c517915" />
+- komennot: '-m 0' on tiivistetyyppi, '-a 0' on hyökkäystapa (suorsanakirja hyökkäys) ja '-r' viittaa sääntötiedostoon.
+- Hashcat antoi virhekoodin, jonka mukaan tiivisteessä oli ylimääräinen viiva joten korjasin sen:
+<img width="502" height="44" alt="image" src="https://github.com/user-attachments/assets/dcd5dd13-e1ce-4945-b36e-83ef4a21f172" />
+
+- Sitten sain ajettua komennon ongelmitta:
+<img width="628" height="318" alt="image" src="https://github.com/user-attachments/assets/0d62cb67-1a4e-4687-a5ca-ecdbadf32b0b" />
+
+Lähde: https://hashcat.net/wiki/doku.php?id=rule_based_attack (Luettu 22.9.2026)
+
