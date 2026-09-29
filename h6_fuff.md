@@ -4,12 +4,13 @@
 - Fuff on brute force tietoturvatarkastukseen suunnattu monipuolinen työkalu.
 - Työkalu lähettää automaattisesti suuria määriä HTTP-pyyntöjä kohteeseen sanalistoja hyödyntäen (ei tarvitse itse manuaalisesti kirjoittaa).
 - Työkalun avulla voidaan tunnistaa poikkeamia suodattamalla vastauksia, esimerkiksi piilotettujen hakemistojen etsimistä.
+- Lähde: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/ (Luettu 27.9.2026)
 
 **Hoikkala 2023: ffuf README.md**
 - Erittäin nopea, Go-kielellä tehty komentorivityökalu verkkopalveluiden sumennukseen ja sisällön kartoitukseen.
 - Korvaa osoitteessa, otsakkeessa tai lomaketiedoissa olevan FUZZ-avainsanan sanalistan termeillä.
 - Piilotettujen tiedostojen, hakemistojen, virtuaali-isäntien (vhosts) ja parametrien löytäminen.
-
+- Lähde: https://github.com/ffuf/ffuf/blob/master/README.md (Luettu 28.9.2026)
 
 **a) Fuzzzz. Ratkaise dirfuz-1 artikkelista Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf.**
 - 
