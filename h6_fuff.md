@@ -1,11 +1,18 @@
 **X) Tiivistä**
 - 
 **Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf**
-- Fuff on brute force tietoturvatarkastukseen suunnattu monipuolinen työkalu 
-- Työkalu lähettää automaattisesti suuria määriä HTTP-pyyntöjä kohteeseen sanalistoja hyödyntäen (ei tarvitse itse manuaalisesti kirjoittaa)
-- Työkalun avulla voidaan tunnistaa poikkeamia suodattamalla vastauksia, esimerkiksi piilotettujen hakemistojen etsimistä
+- Fuff on brute force tietoturvatarkastukseen suunnattu monipuolinen työkalu.
+- Työkalu lähettää automaattisesti suuria määriä HTTP-pyyntöjä kohteeseen sanalistoja hyödyntäen (ei tarvitse itse manuaalisesti kirjoittaa).
+- Työkalun avulla voidaan tunnistaa poikkeamia suodattamalla vastauksia, esimerkiksi piilotettujen hakemistojen etsimistä.
+
+**Hoikkala 2023: ffuf README.md**
+- Erittäin nopea, Go-kielellä tehty komentorivityökalu verkkopalveluiden sumennukseen ja sisällön kartoitukseen.
+- Korvaa osoitteessa, otsakkeessa tai lomaketiedoissa olevan FUZZ-avainsanan sanalistan termeillä.
+- Piilotettujen tiedostojen, hakemistojen, virtuaali-isäntien (vhosts) ja parametrien löytäminen.
+
 
 **a) Fuzzzz. Ratkaise dirfuz-1 artikkelista Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf.**
+- 
 - Ensiksi latasin Teron sivuilta halutun tiedoston, annoin sille suoritus oikeudet sekä käynnistin sen:
 
 <img width="920" height="376" alt="image" src="https://github.com/user-attachments/assets/c5a2435e-1f9c-4156-be30-df0e80f98c02" />
@@ -14,7 +21,7 @@
 
 <img width="650" height="196" alt="image" src="https://github.com/user-attachments/assets/8d26b6ef-8cd2-4f0a-abdd-630fd3f77f91" />
 
-- Avasin uuden terminaalin missä suoritin loput tehtävästä. Olin aikaisemmin jos ehtinyt ladata sanalistan
+- Avasin uuden terminaalin missä suoritin loput tehtävästä. Olin aikaisemmin jos ehtinyt ladata sanalistan:
 
 <img width="180" height="62" alt="image" src="https://github.com/user-attachments/assets/e348663e-7f32-4076-aa41-51656e5e8d0a" />
 
